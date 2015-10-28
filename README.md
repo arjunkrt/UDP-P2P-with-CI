@@ -1,6 +1,6 @@
 Peer to Peer File Transfer Application for RFCs using a Centralized Index
 
-Changes I have made:
+Changes I have made: (10/28/2015)
 
 TCPServer.py 
 
