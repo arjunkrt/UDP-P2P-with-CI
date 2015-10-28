@@ -1,7 +1,7 @@
 from socket import *
 
 serverName = "192.168.1.10"
-serverPort = 12000
+serverPort = 7734
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
 sentence = input("Enter the client no")
