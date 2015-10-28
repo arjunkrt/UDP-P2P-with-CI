@@ -1,4 +1,4 @@
-Peer to Peer File Transfer Application for RFCs using a Centralized Index
+
 
 Changes I have made: (10/28/2015)
 
@@ -7,7 +7,7 @@ TCPServer.py
 This is the central server.
 Accepts multiple requests in parallel threads
 Maintains a list of peers(only one list as of now)
-Right now, simpley exchanges messages between client, no file transfer
+Right now, simply exchanges messages between client, no file transfer
 
 TCPClient.py
 
