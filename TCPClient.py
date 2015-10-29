@@ -2,7 +2,7 @@ from socket import *
 
 
 class TCPClient(object):
-    serverName = "192.168.1.10"
+    serverName = "192.168.1.9"
     serverPort = 7734
     clientSocket = socket(AF_INET, SOCK_STREAM)
     clientSocket.connect((serverName, serverPort))
