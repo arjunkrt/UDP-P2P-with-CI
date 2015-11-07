@@ -2,7 +2,7 @@ from socket import *
 
 
 class TCPClient(object):
-    serverName = "192.168.1.9"
+    serverName = "192.168.1.10"
     serverPort = 7734
     clientSocket = socket(AF_INET, SOCK_STREAM)
     clientSocket.connect((serverName, serverPort))
@@ -21,11 +21,13 @@ class TCPClient(object):
         return message
 
 client = TCPClient()
-mesg = client.frameMessage()
-client.clientSocket.send(mesg.encode())
+
 while 1:  # a condition, such as whether you got the RFC you wanted
+    mesg = client.frameMessage()
+    client.clientSocket.send(mesg.encode())
+    serverResponse = client.clientSocket.recv(4096)
     pass  # the receiving process
-    client.clientSocket.close()
+    #client.clientSocket.close()
 
     """
 

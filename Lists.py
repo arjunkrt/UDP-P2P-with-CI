@@ -6,20 +6,11 @@ class LLNodePeer(object):
         self.portno = None
         self.next_node = None
 
-    def get_ipaddr(self):
-        return self.ipaddr
-
     def set_ipaddr(self, ipaddr):
         self.ipaddr = ipaddr
 
-    def get_portno(self):
-        return self.portno
-
     def set_portno(self, portno):
         self.portno = portno
-
-    def get_next(self):
-        return self.next_node
 
     def set_next(self, new_next):
         self.next_node = new_next
