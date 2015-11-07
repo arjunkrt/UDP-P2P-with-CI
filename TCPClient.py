@@ -25,7 +25,7 @@ client = TCPClient()
 while 1:  # a condition, such as whether you got the RFC you wanted
     mesg = client.frameMessage()
     client.clientSocket.send(mesg.encode())
-    serverResponse = client.clientSocket.recv(4096)
+    #serverResponse = client.clientSocket.recv(4096)
     pass  # the receiving process
     #client.clientSocket.close()
 
